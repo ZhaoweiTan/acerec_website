@@ -1,0 +1,121 @@
+.ace-credits {
+    background-color: #eee;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.ace-credits .credits-list > div h2 {
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-variant: small-caps;
+}
+
+.ace-credits .credits-list {
+    margin-top: 25px;
+}
+
+.ace-footer {
+    background: #555;
+    color: #999;
+    padding: 20px 0 15px;
+    font-size: 1.4rem;
+}
+
+.ace-footer a {
+    color: #999
+}
+
+.ace-footer a:hover {
+    color: #eee
+}
+
+.ace-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+display: inline-block
+}
+
+.ace-footer .ace-fd {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+
+.ace-footer .ace-cp {
+    font-size: 13px;
+    margin: 10px 0
+}
+
+.ace-footer .ace-social {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.ace-footer .ace-social li {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.ace-footer .ace-social li:first-child {
+    margin-left: 0
+}
+
+.ace-footer .ace-social a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: #999;
+    color: #555;
+    font-size: 28px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .15s
+}
+
+.ace-footer .ace-social a:hover {
+    background: #eee
+}
+
+.ace-main-search{
+    max-width: 600px;
+}
+
+.ace-main-search h1{
+    font-size: 30px;
+    color: #616161;
+    font-variant: small-caps;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.ace-main-search .am-btn{
+    display: block;
+}
+
+.ace-main-search .btn-set{
+    margin-top: 20px;
+}
+.ace-main-search .ace-advance{
+    background-color: #3bb4f2;
+}
+.ace-browse{
+    background-color: #eee;
+    margin-top: 100px;
+}
+.ace-index-panel{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /*font-size: 1rem;*/
+}
+
+.ace_list{
+    margin-top: 20px;
+}
+
+.ace_list .info{
+    color: #008000;
+
+}

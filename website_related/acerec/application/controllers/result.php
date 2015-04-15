@@ -9,9 +9,9 @@ class Result extends CI_Controller {
             'nav_title'=>'3'
         );
         $keyword=$this->input->get("q");
-        $per_page=2;
+        $per_page=5;
         $page=$this->input->get('page');
-        if($page<=0)$page=5;
+        if($page<=0)$page=1;
         $result=file_get_contents(
             "http://localhost:8983/solr/papers/select?q="
             .urlencode($keyword).

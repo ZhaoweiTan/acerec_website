@@ -1225,7 +1225,7 @@ Options.Node = {
   
   overridable: false,
   type: 'circle',
-  color: '#ccb',
+  color: '#edf8b1',//node color
   alpha: 1,
   dim: 3,
   height: 20,
@@ -1533,11 +1533,11 @@ Options.Label = {
   overridable: false,
   type: 'HTML', //'SVG', 'Native'
   style: ' ',
-  size: 10,
-  family: 'sans-serif',
+  size: 20,
+  family: 'Gill Sans',
   textAlign: 'center',
   textBaseline: 'alphabetic',
-  color: '#fff'
+  color: '#2c7fb8' //font color
 };
 
 
@@ -14113,7 +14113,7 @@ $jit.Icicle.Label.Native = new Class({
         m = ctx.measureText(node.name);
 
     // Guess as much as possible if the label will fit in the node
-    if(height < (size * 1.5) || width < m.width)
+    if(height < (size * 1.5) || width * 1.2 < m.width)
       return;
 
     var pos = node.pos.getc(true);

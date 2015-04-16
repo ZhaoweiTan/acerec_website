@@ -7,7 +7,7 @@ Website part of acerec
 
 包星宇，王尧：完成显示页面的优化，加入topic tree
 
-徐方正：完成搜索结果到topic id的映射
+许方正：完成搜索结果到topic id的映射
 
 几点补充事项：
 

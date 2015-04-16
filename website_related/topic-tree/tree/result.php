@@ -14,10 +14,13 @@
 <script language="javascript" type="text/javascript" src="../js/jit.js"></script>
 
 <!-- Example File -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script language="javascript" type="text/javascript" src="example1.js"></script>
+
+
 </head>
 
-<body onload="init();">
+<body>
 
 </br>
 
@@ -29,7 +32,6 @@
 
 
 </br>
-
 
 <div id="container">
 
@@ -76,15 +78,15 @@
 </div>
 
 <a id="update" href="#" class="theme button white">Go to Parent</a>
- 
+
 <div id="id-list"></div>
 
 
-<div style="text-align:center;"><a href="example1.js">See the Example Code</a></div>            
+<div style="text-align:center;"><a href="example1.js">See the Example Code</a></div>
 </div>
 
 <div id="center-container">
-    <div id="infovis"></div>    
+    <div id="infovis"></div>
 </div>
 
 <div id="right-container">

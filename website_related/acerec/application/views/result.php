@@ -20,11 +20,13 @@
 
 
 <?php
+        $taxonomy=file_get_contents(ROOT_PATH.'/data/taxonomy.json');
+        $taxonomy=json_decode($taxonomy);
         foreach($result['response']['docs'] as $or):?>
             <h3><a href="#"><?php echo $or['title'][0]?></a></h3>
             <?php
             foreach ($or['ieeeTerms'] as $kw):?>
-                <p class="info"><?php echo $kw?></p>
+                <p class="info" onclick="changeroot('Node<?php echo array_search($kw, $taxonomy)+1?>')"><?php echo $kw?></p>
             <p class="describe"></p>
         <?php endforeach;?>
         <?php endforeach;

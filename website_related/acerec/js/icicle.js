@@ -39167,7 +39167,6 @@ function init(){
 
   // compute positions and plot
   icicle.refresh();
-  console.log(1);
   //end
 }
 

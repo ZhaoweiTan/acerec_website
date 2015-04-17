@@ -14,27 +14,6 @@
     margin-top: 25px;
 }
 
-.am-g-fixed .info{
-    margin-top: 0px;
-    padding: 0px;
-    font-size:14px;
-    color:black;
-}
-
-.am-g-fixed .titleinfo{
-    margin-top: 0px;
-    padding: 0px;
-    font-size:20px;
-    color:black;
-}
-
-.am-g-fixed .found{
-    color:blue;
-    font-style: italic;
-    margin-top: 0px;
-    padding: 0px;
-}
-
 .ace-footer {
     background: #555;
     color: #999;

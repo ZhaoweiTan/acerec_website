@@ -13,7 +13,7 @@ class Result extends CI_Controller {
         $page=$this->input->get('page');
         if($page<=0)$page=1;
         $result=file_get_contents(
-            "http://localhost:8080/solr/select?q="
+            "http://localhost:8983/solr/papers/select?q="
             .urlencode($keyword).
             "&wt=json&indent=true"
             ."&start=".($page-1)*$per_page

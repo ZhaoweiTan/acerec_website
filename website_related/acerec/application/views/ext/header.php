@@ -16,6 +16,7 @@
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="<?php echo ROOT_PATH?>/js/jquery.min.js"></script>
     <script src="<?php echo ROOT_PATH?>/js/amazeui.js"></script>
+
     <!--<![endif]-->
     <!--[if lte IE 8 ]>
     <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>

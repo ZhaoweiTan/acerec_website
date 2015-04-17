@@ -9833,7 +9833,7 @@
 </doc>
 <doc>
 <field name="id">2459</field>
-<field name="name">IEEE Power & Energy Society</field>
+<field name="name">IEEE Power &amp; Energy Society</field>
 </doc>
 <doc>
 <field name="id">2460</field>
@@ -10133,7 +10133,7 @@
 </doc>
 <doc>
 <field name="id">2534</field>
-<field name="name">IEEE Communications Surveys & Tutorials</field>
+<field name="name">IEEE Communications Surveys &amp; Tutorials</field>
 </doc>
 <doc>
 <field name="id">2535</field>
@@ -10537,7 +10537,7 @@
 </doc>
 <doc>
 <field name="id">2635</field>
-<field name="name">IEEE Communications Surveys & Tutorials</field>
+<field name="name">IEEE Communications Surveys &amp; Tutorials</field>
 </doc>
 <doc>
 <field name="id">2636</field>

@@ -117,5 +117,8 @@ display: inline-block
 
 .ace_list .info{
     color: #008000;
+}
 
+.ace_list #left-container{
+    float:end;
 }

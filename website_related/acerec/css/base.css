@@ -71,7 +71,7 @@ a {
 
 #center-container {
     width:600px;
-    left:200px;
+    left:-50px;/*200px*/
     background-color:#43a2ca; 
     color:#ccc;
 }

@@ -30,13 +30,17 @@ function findNum($str=''){
 class Result extends CI_Controller {
 	public function index()
 	{
-        global $ids;
-        $s=file_get_contents("c:/a.js");
-        $k=json_decode($s,true);
+        //global $ids;
+        //$s=file_get_contents("c:/a.js");
+        //$k=json_decode($s,true);
         //var_dump($k);
+        //
 
+        //$b=dfs($k);
+        //file_put_contents("c:/c.js",json_encode($ids));
 
-        $b=dfs($k);
+        $ids=file_get_contents( __DIR__."/../../../topic-tree/tree/ids.json");
+        $ids=json_decode($ids,true);
 
         $head_data=array(
             'title'=>'Result | Academic Paper Recommendation',

@@ -1,9 +1,43 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$ids=array();
+function dfs($a){
+    global $ids;
+    if(empty($a))return array();
+    $a['label']=$a['name'];
+    unset($a['name']);
+    unset($a['data']);
+    $a['id']=findNum($a['id']);
+    $ids[$a['label']]=$a['id'];
+    if(!empty($a['children']))
+        foreach($a['children'] as &$or)
+            $or=dfs($or);
+        else
+            unset($a['children']);
+    return $a;
+}
+function findNum($str=''){
+    $str=trim($str);
+    if(empty($str)){return '';}
+    $result='';
+    for($i=0;$i<strlen($str);$i++){
+        if(is_numeric($str[$i])){
+            $result.=$str[$i];
+        }
+    }
+    return $result;
+}
 
 class Result extends CI_Controller {
-
 	public function index()
 	{
+        global $ids;
+        $s=file_get_contents("c:/a.js");
+        $k=json_decode($s,true);
+        //var_dump($k);
+
+
+        $b=dfs($k);
+
         $head_data=array(
             'title'=>'Result | Academic Paper Recommendation',
             'nav_title'=>'3'
@@ -35,6 +69,7 @@ class Result extends CI_Controller {
         $data['page_link']=$this->pagination->create_links();
         $data['result']=$result;
         $data['keyword']=$keyword;
+        $data['ids']=$ids;
 
 
 
@@ -45,4 +80,4 @@ class Result extends CI_Controller {
 }
 
 /* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* Location: .r/application/controllers/welcome.php */

@@ -122,3 +122,18 @@ display: inline-block
 .ace_list #left-container{
     float:end;
 }
+
+.ace_result_title{
+    font-size: 2rem;
+    color: #0084c7;
+    font-weight: bold;
+}
+.ace_result_source{
+    font-size: 0.9rem;
+    color: #008000;
+}
+.ace_result_tree{
+    overflow: scroll;
+    background-color: #f9f9f9;
+    height: 450px;
+}

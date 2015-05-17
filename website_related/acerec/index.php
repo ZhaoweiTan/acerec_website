@@ -175,8 +175,8 @@ if (defined('ENVIRONMENT'))
 	// Name of the "system folder"
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
 
-    define('ROOT_PATH','http://localhost/acerec');
-    define('ROOT_FILE','http://localhost/acerec/index.php');
+    define('ROOT_PATH','http://localhost:81/acerec');
+    define('ROOT_FILE','http://localhost:81/acerec/index.php');
 
 
 	// The path to the "application" folder

@@ -176,6 +176,7 @@ if (defined('ENVIRONMENT'))
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
 
     define('ROOT_PATH','http://localhost:81/acerec');
+//http://acemap.sjtu.edu.cn
     define('ROOT_FILE','http://localhost:81/acerec/index.php');
 
 

@@ -5,7 +5,7 @@
 
             <div class="am-g">
                 <div class="am-u-sm-12">
-                    <input class="am-form-field" type="text" name="q" placeholder="请输入你想找的话题">
+                    <input class="am-form-field" type="text" name="q" placeholder="Please input the topic you want">
                 </div>
             </div>
             <div class="am-g btn-set">
@@ -26,7 +26,9 @@
         </div>
 
     </form>
-    <div class="ace-browse am-g">
+
+
+    <!--<div class="ace-browse am-g">
         <div class="am-u-sm-12">
             <p>
                 <strong>By Auther:</strong><br>
@@ -106,8 +108,9 @@
                 <span class="am-badge am-badge-warning">2014</span>
             </p>
         </div>
-    </div>
-    <div class="am-g ace-index-panel">
+    </div>-->
+
+    <!--<div class="am-g ace-index-panel">
         <div class="am-u-sm-4">
             <section class="am-panel am-panel-default">
                 <header class="am-panel-hd">
@@ -131,9 +134,12 @@
                 </div>
             </section>
         </div>
-    </div>
-</div>
+    </div>-->
 
+</div>
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<!--
 <section class="ace-credits">
     <div class="am-g am-g-fixed credits-list">
         <div class="am-u-md-4">
@@ -161,7 +167,7 @@
         </div>
     </div>
 </section>
-
+-->
 <script>
     /*
     $('[name=submit]').click(

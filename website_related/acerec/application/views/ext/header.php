@@ -29,7 +29,7 @@
         <h1 class="am-topbar-brand">
             <a href="#">
                 <span class="am-icon-university"></span>
-                AceRec
+                AceMap
             </a>
         </h1>
 
@@ -45,8 +45,8 @@
         </div>
         <div class="am-topbar-right">
             <ul class="am-nav am-nav-pills am-topbar-nav">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="<?php echo ROOT_FILE?>/help">Help</a></li>
+                <li><a href="<?php echo ROOT_FILE?>/feedback">Feedback</a></li>
             </ul>
         </div>
     </div>

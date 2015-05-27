@@ -12,16 +12,15 @@
         </div>
         <div class="am-u-md-9 am-u-md-pull-3">
             <h2 class="ace-fd">
-                <span class="am-icon-university"> AceRec</span>
+                <span class="am-icon-university"> AceMap</span>
             </h2>
             <ul>
                 <li>
-                    <a href="#">关于AceRec</a>
-                    | <a href="#">联系我们</a>
-                    | <a href="#">实现技术</a>
+                    <a href="#">About AceMap</a>
+                    | <a href="#">Contact Us</a>
                 </li>
             </ul>
-            <p class="ace-cp">© copyright 2015 Acerec, Inc. Shanghai Jiaotong University.
+            <p class="ace-cp">© copyright 2015 Acemap, Inc. Shanghai Jiaotong University.
             </p></div>
     </div>
 </footer>

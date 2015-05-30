@@ -27,9 +27,9 @@
 <header class="am-topbar am-topbar-inverse">
     <div class="am-g-fixed am-g">
         <h1 class="am-topbar-brand">
-            <a href="#">
+            <a href="<?php echo ROOT_FILE?>/">
                 <span class="am-icon-university"></span>
-                AceRec
+                AceMap
             </a>
         </h1>
 
@@ -38,15 +38,17 @@
                 <li <?php if($nav_title==1)echo 'class="am-active"'?>>
                     <a href="<?php echo ROOT_FILE?>/">Get Started</a>
                 </li>
+                <!--
                 <li <?php if($nav_title==2)echo 'class="am-active"'?>><a href="#">Topic List</a></li>
                 <li <?php if($nav_title==3)echo 'class="am-active"'?>><a href="#">Result</a></li>
+                -->
             </ul>
 
         </div>
         <div class="am-topbar-right">
             <ul class="am-nav am-nav-pills am-topbar-nav">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="<?php echo ROOT_FILE?>/help">Help</a></li>
+                <li><a href="<?php echo ROOT_FILE?>/feedback">Feedback</a></li>
             </ul>
         </div>
     </div>

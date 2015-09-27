@@ -1,0 +1,149 @@
+/* Write your styles */
+.content{
+    width: 90%;
+    margin:0px auto;
+    height: 100%;
+}
+
+.author-left{
+    width: 60%;
+    border-right: solid;
+    border-left: solid;
+    border-color: #999;
+    padding:0px 10px;
+    margin: 0px;
+    float: left;
+    overflow-y: scroll;
+
+}
+
+.author-right{
+    width: 35%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.author-introduction{
+    width: 100%;
+    float: left;
+}
+
+.author-image{
+    width:30%;
+    text-align: center;
+    float: left;
+}
+
+.author-contact{
+    width:70%;
+    float: left;
+}
+
+.author-description{
+    margin-left:auto;
+    margin-right:auto ;
+    border-top:#c0c0c0;
+    border-bottom: solid;
+    border-color: #999;
+    float: left;
+    width: 94%;
+    left:3%;
+    right: 3%;
+    position: relative;
+    padding: 3px;
+}
+.author-static{
+    width: 100%;
+    height: 600px;/*暂时设置这样，为了好看，等有图片了就不用设置这个样式，将其注释*/
+    position: relative;
+    float: left;
+
+}
+.author-static-nav{
+    padding: 3px;
+    width: 94%;
+    margin-left:auto;
+    margin-right:auto ;
+    float:left;
+    left:3%;
+    right: 3%;
+
+    border-bottom: 1.5px solid #b2b2b2;
+
+    position: relative;
+}
+
+.author-static-nav.am-dropdown{
+    height: 30px;
+}
+
+.author-static-picture{
+    padding: 3px;
+    width: 94%;
+    margin-left:auto;
+    margin-right:auto ;
+    float:left;
+    left:3%;
+    right: 3%;
+    height: 80%;
+    border: 1.5px solid #b2b2b2;
+
+    position: relative;
+}
+
+.author-paper{
+    height: 100%;
+    overflow-y: scroll;
+}
+.author-paper-item{
+    border-bottom: 1.5px solid #999;
+}
+
+
+/* Write your styles */
+.content{
+    width: 90%;
+    margin:0px auto;
+    height: 100%;
+}
+
+.conference-left{
+    width: 55%;
+    border-right: solid;
+    border-color: #999;
+    padding: 10px;
+    margin: 0px;
+    float: left;
+
+}
+
+.conference-right{
+    width: 40%;
+    float: left;
+
+    padding: 10px;
+
+}
+
+.conference-button{
+    margin: 5px ;
+}
+
+.conference-paperlist{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.conference-paperlist-paper{
+    border-bottom: solid;
+    border-color: #999;
+}
+.conference-paperlist-head{
+    width:100%;
+}
+.conference-paperlist-search{
+    right:0px;
+    float: right;
+}

@@ -56,7 +56,7 @@ class Result extends CI_Controller {
         $page=$this->input->get('page');
         if($page<=0){$page=1;}
         $result=file_get_contents(
-            "http://localhost:8983/solr/papers/select?q="
+            "http://localhost:8080/solr/papers/select?q="
             .urlencode($keyword).
             "&fq=NOT+abstract%3Dabstract&fq=NOT+ieeeTerms%3DNone&wt=json&indent=true"
         );
@@ -66,7 +66,7 @@ class Result extends CI_Controller {
         if($result['response']['numFound']==0)
         {
             $result=file_get_contents(
-                "http://localhost:8983/solr/papers/select?q="
+                "http://localhost:8080/solr/papers/select?q="
                 .urlencode($keyword)."~1".
                 "&fq=NOT+abstract%3Dabstract&fq=NOT+ieeeTerms%3DNone&wt=json&indent=true"
             );
@@ -82,7 +82,7 @@ class Result extends CI_Controller {
         $keywordAu.trim(" ");
         $keywordAu=preg_replace("/\s+/",' && ',$keywordAu);
         $result_for_author=file_get_contents(
-            "http://202.120.36.137:8983/solr/authors/select?q=Name:"
+            "http://localhost:8080/solr/authors/select?q=Name:"
             .urlencode($keywordAu)."~1".
             "&wt=json&indent=true"
         );
@@ -97,7 +97,7 @@ class Result extends CI_Controller {
         /////////////////////////////result for conference page///////////////////////////////////
         $result_for_conference_bool = false;
         $result_for_conference=file_get_contents(
-            "http://localhost:8983/solr/conference/select?q=ShortName:"
+            "http://localhost:8080/solr/conference/select?q=ShortName:"
             .urlencode($keywordAu)."~1".
             "&wt=json&indent=true"
         );

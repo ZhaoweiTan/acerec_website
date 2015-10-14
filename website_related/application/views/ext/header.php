@@ -60,6 +60,40 @@
                 <!--<li><a href="<?php echo ROOT_FILE?>/help">Help</a></li>-->
                 <li <?php if(isset($nav_title)&&$nav_title==4)echo 'class="am-active"'?>
 				><a href="<?php echo ROOT_FILE?>/feedback">Contact us</a></li>
+
+                    <?php
+                        session_start();
+                        if(isset($_SESSION['log_status'])&&($_SESSION['log_status']==2)){
+                            ?>
+
+                                <li class="am-dropdown" data-am-dropdown>
+                                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                                        Hello,
+                                        <?php
+                                        if(isset($_SESSION['username']))
+                                        {echo $_SESSION['username'];}
+                                        ?>
+                                        <span class="am-icon-caret-down"></span>
+                                    </a>
+                                    <ul class="am-dropdown-content">
+                                        <li class="am-active"><a href="<?php echo ROOT_FILE?>/logout">Logout</a></li>
+
+                                    </ul>
+                                </li>
+                            <?php
+                        }
+                        else{
+                            ?>
+                            <li <?php if(isset($nav_title)&&$nav_title==5)echo 'class="am-active"'?>>
+                                <a href="<?php echo ROOT_FILE?>/login">Login</a>
+                            </li>
+                        <?php
+                        }
+
+                    ?>
+
+
+
             </ul>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-error_reporting(E_ALL || ~E_NOTICE);
+//error_reporting(E_ALL);
 
 
 class User extends CI_Controller {
@@ -14,7 +14,7 @@ class User extends CI_Controller {
             'title'=>'Login | Academic Paper Recommendation',
             'nav_title'=>'5'
         );
-
+		
 		$this->load->view('ext/header',$head_data);
         $this->load->view('user/loginpage',$head_data);
         $this->load->view('ext/footer');
@@ -94,7 +94,8 @@ class User extends CI_Controller {
 
 
             $query = $this->db->query("SELECT * FROM users WHERE account=?",array($account));
-            if (!empty($query->result_array())) {
+			$result = $query->result_array();
+            if (!empty($result)) {
                 $_SESSION['reg_status']=1;//There exists this account
                 $_SESSION['info']='<h1>Sorry</h1><h2>There is the same account.</h2>';
             }
